@@ -39,11 +39,14 @@ class Ex12_4 {
     }  // main
 }
 
-class FruitBox2<T extends Fruit2> extends Box2<T> {}
+class FruitBox2<T extends Fruit2> extends Box2<T> {
+
+}
 
 class Box2<T> {
     ArrayList<T> list = new ArrayList<T>();
     void add(T item) { list.add(item);      }
+    //void add(Apple2 item) { list.add((T) item);      }
     T get(int i)     { return list.get(i);  }
     ArrayList<T> getList() { return list;   }
     int size()       { return list.size();  }
