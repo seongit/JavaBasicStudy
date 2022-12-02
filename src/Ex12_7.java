@@ -11,6 +11,6 @@ class Child_2 extends Parent_2{
 public class Ex12_7{
     public static void main(String[] args) {
         Child_2 c = new Child_2();
-        c.parentMethod();
+        //c.parentMethod();
     }
 }
