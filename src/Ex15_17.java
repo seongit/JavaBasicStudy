@@ -9,8 +9,7 @@ public class Ex15_17 {
             System.exit(0);
         }
 
-        String currDir = System.getProperty("user.dir");
-
+        String currDir = "/Users/seongeun/Documents/Dev/JavaBasicStudy/temp";
         File dir = new File(currDir);
 
         String ext = "." + args[0];

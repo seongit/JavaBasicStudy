@@ -15,7 +15,6 @@ public class Ex15_9 {
                     fw.write(data);
                 }
             }
-
             fr.close();
             fw.close();
 

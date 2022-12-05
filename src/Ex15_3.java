@@ -23,10 +23,11 @@ public class Ex15_3 {
             // 블락킹이란 데이터를 읽어 올 때 데이터를 기다리기 위해 멈춰있는 것을 뜻한다.
             // 예를 들어 사용자가 데이터를 ㅣㅇ별갛기 전까지 기다리고 있을 때 블락킹 상태에 있다고 한다.
             while (input.available() > 0){
-
-                input.read(temp);
-                output.write(temp);
-
+//                input.read(temp);
+//                output.write(temp);
+//
+                int len = input.read(temp);
+                output.write(temp,0,len);
                 outSrc = output.toByteArray();
                 printArrays(temp,outSrc);
 
@@ -37,7 +38,6 @@ public class Ex15_3 {
     }
 
     static void printArrays(byte[] temp, byte[] outSrc) {
-
         System.out.println("temp :" + Arrays.toString(temp));
         System.out.println("Output Source : " + Arrays.toString(outSrc));
 

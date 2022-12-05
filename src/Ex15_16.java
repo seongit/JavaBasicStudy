@@ -8,7 +8,7 @@ public class Ex15_16 {
             System.exit(0);
         }
 
-        File f = new File("/Users/seongeun/Documents/Dev/JavaBasicStudy/src/pk2");
+        File f = new File(args[0]);
 
         if(!f.exists() || !f.isDirectory()){
             System.out.println("유효하지 않은 디렉토리입니다.");

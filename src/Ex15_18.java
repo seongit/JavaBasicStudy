@@ -21,7 +21,7 @@ public class Ex15_18 {
             String fileName = list[i].getName();
             // 파일명
             String newFileName = "0000" + fileName;
-            newFileName = newFileName.substring(newFileName.length() - 7);
+            newFileName = newFileName.substring(newFileName.length() - 9);
             list[i].renameTo(new File(dir, newFileName));
         }
 

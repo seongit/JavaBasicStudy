@@ -6,7 +6,7 @@ public class Ex15_11 {
 
     public static void main(String[] args) {
         try {
-            FileReader fr = new FileReader("test.txt");
+            FileReader fr = new FileReader("/Users/seongeun/Documents/Dev/JavaBasicStudy/src/Ex15_11.java");
             BufferedReader br = new BufferedReader(fr);
 
             String line = "";
